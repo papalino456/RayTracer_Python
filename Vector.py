@@ -9,11 +9,11 @@ class Vector():
     def __str__(self):
         return "x:{}y:{}z:{}".format(self.x, self.y, self.z)
 
-    def dot_product(self,other):
+    def dotProduct(self,other):
         return self.x * other.x + self.y * other.y + self.z * other.z
     
     def magnitude(self):
-        return math.sqrt(self.dot_product(self))
+        return math.sqrt(self.dotProduct(self))
     
     def normalize(self):
         return self / self.magnitude()
